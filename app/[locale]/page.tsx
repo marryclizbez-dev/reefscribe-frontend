@@ -71,7 +71,15 @@ export default function Home() {
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-start pt-20 px-4 w-full max-w-3xl mx-auto">
         <div className="text-center mb-10 w-full">
-          <h1 className="text-5xl md:text-6xl font-light tracking-tight text-foreground mb-4">
+          <h1 
+            className="text-5xl md:text-6xl font-thin tracking-tight mb-4"
+            style={{
+              background: 'linear-gradient(135deg, #0071E3 0%, #00C2FF 50%, #0071E3 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}
+          >
             {t('title')}
           </h1>
           <p className="text-lg md:text-xl text-foreground/70">
