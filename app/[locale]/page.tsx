@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next-intl/navigation';
+import { useRouter, usePathname } from '../../navigation';
+import MapBackground from '../../components/MapBackground';
 
 export default function Home() {
   const t = useTranslations('Search');
@@ -55,6 +56,7 @@ export default function Home() {
 
   return (
     <div className={`flex flex-col min-h-screen ${fontClass}`}>
+      <MapBackground />
       {/* Top right language toggle */}
       <header className="w-full flex justify-end p-6">
         <button
