@@ -1,6 +1,6 @@
 export default function MapBackground() {
   return (
-    <div style={{ position: 'fixed', bottom: '-5%', right: '-5%', width: '70%', height: '70%', zIndex: -1, opacity: 0.15, pointerEvents: 'none' }}>
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: -1, opacity: 0.15, pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
 <path d="M 151,90 L 166,153 L 189,234 L 272,360 L 310,414 L 363,531 L 363,495 L 394,441 L 416,513 L 424,621 L 629,594 L 704,522 L 750,468 L 780,423 L 795,468 L 841,414 L 772,351 L 697,405 L 666,405 L 500,324 L 363,189 L 234,54 L 166,90 Z" fill="#0071E3" fillOpacity="0.08" stroke="none" />
 <path 
