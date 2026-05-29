@@ -64,7 +64,7 @@ export default function Home() {
           onClick={toggleLanguage}
           className="px-4 py-2 text-sm font-medium border border-border-color rounded-full hover:bg-black/5 transition-colors"
         >
-          {locale === 'en' ? 'العربية' : 'English'}
+          {t('toggle')}
         </button>
       </header>
 

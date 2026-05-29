@@ -3,6 +3,7 @@
     "title": "ROPME SE",
     "subtitle": "Marine & Environmental Research Intelligence Platform",
     "placeholder": "Enter your research query...",
+    "toggle": "AR",
     "button": "Search",
     "sources": "Sources:",
     "images": "Relevant Images:",
