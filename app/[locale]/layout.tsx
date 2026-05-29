@@ -20,7 +20,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir}>
       <head>
-        <title>ReefScribe</title>
+        <title>ROPME SE</title>
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <NextIntlClientProvider messages={messages}>
