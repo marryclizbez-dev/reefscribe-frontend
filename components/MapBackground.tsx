@@ -1,11 +1,11 @@
 export default function MapBackground() {
   return (
-    <div className="fixed inset-0 w-full h-full -z-10 pointer-events-none flex items-center justify-center overflow-hidden">
+    <div className="fixed -z-10 pointer-events-none overflow-hidden" style={{ bottom: "-10%", right: "-10%", width: "100%", height: "100%" }}>
       <svg
         viewBox="0 0 1440 900"
         className="w-full h-full"
         style={{
-          opacity: 0.9, transform: 'translateX(20vw) scale(0.6)'
+          opacity: 0.12, transform: 'scale(0.5)'
         }}
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid slice"
