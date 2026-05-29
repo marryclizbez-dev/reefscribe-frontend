@@ -1,0 +1,12 @@
+{
+  "Search": {
+    "title": "ReefScribe",
+    "subtitle": "Scientific Coral Reef Research Engine",
+    "placeholder": "Ask a question about coral reefs...",
+    "button": "Search",
+    "sources": "Sources:",
+    "images": "Relevant Images:",
+    "loading": "Searching the research database...",
+    "error": "An error occurred while fetching results. Please try again."
+  }
+}
