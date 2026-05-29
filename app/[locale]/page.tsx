@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-start pt-20 px-4 w-full max-w-3xl mx-auto">
-        <div className="text-center mb-10 w-full">
+        <div className="text-center mb-16 w-full">
           <h1 
             className="text-5xl md:text-6xl font-thin tracking-tight mb-4"
             style={{
@@ -83,24 +83,31 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Search Bar */}
-        <form dir="ltr" onSubmit={handleSearch} className={`w-full relative shadow-sm rounded-full bg-card flex ${locale === 'ar' ? 'flex-row-reverse' : 'flex-row'} items-center border border-border-color focus-within:border-accent focus-within:ring-1 focus-within:ring-accent transition-all duration-300`}>
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={t('placeholder')}
-            className="flex-grow bg-transparent outline-none px-6 py-4 text-lg text-foreground placeholder-foreground/50 rounded-full"
-            dir="auto"
-          />
-          <button
-            type="submit"
-            disabled={loading || !query.trim()}
-            className="mr-2 ml-2 px-6 py-2.5 bg-accent text-white rounded-full font-medium hover:bg-accent/90 disabled:opacity-50 transition-colors shrink-0"
-          >
-            {t('button')}
-          </button>
-        </form>
+        {/* Search Bar Container */}
+        <div className="w-full relative flex flex-col items-center">
+          <form dir="ltr" onSubmit={handleSearch} className={`w-full relative shadow-sm rounded-full bg-card flex ${locale === 'ar' ? 'flex-row-reverse' : 'flex-row'} items-center border border-border-color focus-within:border-accent focus-within:ring-1 focus-within:ring-accent transition-all duration-300`}>
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={t('placeholder')}
+              className="flex-grow bg-transparent outline-none px-6 py-4 text-lg text-foreground placeholder-foreground/50 rounded-full"
+              dir="auto"
+            />
+            <button
+              type="submit"
+              disabled={loading || !query.trim()}
+              className="mr-2 ml-2 px-6 py-2.5 bg-accent text-white rounded-full font-medium hover:bg-accent/90 disabled:opacity-50 transition-colors shrink-0"
+            >
+              {t('button')}
+            </button>
+          </form>
+          
+          {/* Document Count Indicator */}
+          <div className="mt-3 text-sm text-[#6E6E73] text-center w-full">
+            {t('docCount')}
+          </div>
+        </div>
 
         {/* Results Area */}
         <div className="w-full mt-12 mb-20 flex flex-col gap-8 transition-opacity duration-500">

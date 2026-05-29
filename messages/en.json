@@ -5,6 +5,7 @@
     "placeholder": "Enter your research query...",
     "toggle": "AR",
     "button": "Search",
+    "docCount": "Searching across 668 scientific documents",
     "sources": "Sources:",
     "images": "Relevant Images:",
     "loading": "Searching the research database...",
