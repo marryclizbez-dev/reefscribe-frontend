@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         {/* Search Bar */}
-        <form onSubmit={handleSearch} className="w-full relative shadow-sm rounded-full bg-card flex items-center border border-border-color focus-within:border-accent focus-within:ring-1 focus-within:ring-accent transition-all duration-300">
+        <form onSubmit={handleSearch} className={`w-full relative shadow-sm rounded-full bg-card flex ${locale === 'ar' ? 'flex-row-reverse' : 'flex-row'} items-center border border-border-color focus-within:border-accent focus-within:ring-1 focus-within:ring-accent transition-all duration-300`}>
           <input
             type="text"
             value={query}
