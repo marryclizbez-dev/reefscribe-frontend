@@ -2,14 +2,11 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from '../../navigation';
 import MapBackground from '../../components/MapBackground';
 
 export default function Home() {
   const t = useTranslations('Search');
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
 
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
