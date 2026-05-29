@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from 'next-intl/navigation';
 
 export default function Home() {
   const t = useTranslations('Search');
@@ -17,10 +17,7 @@ export default function Home() {
 
   const toggleLanguage = () => {
     const newLocale = locale === 'en' ? 'ar' : 'en';
-    // If pathname is /en/something, replace /en with /ar
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    // Fallback if at root /
-    router.push(pathname === '/' ? `/${newLocale}` : newPath);
+    router.replace(pathname, { locale: newLocale });
   };
 
   const handleSearch = async (e: React.FormEvent) => {
